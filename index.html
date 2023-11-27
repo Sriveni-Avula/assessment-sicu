@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    
+   
+</head>
+<body>
+
+    <div class="login-container" id="loginContainer">
+        
+        <form id="loginForm" onsubmit="return showSuccessMessage()">
+            <div class="container">
+                <div class="column1">
+                  <img src="WhatsApp Image 2023-11-25 at 11.41.29 PM.jpeg" alt="Background Image">
+                </div>
+                
+                <div class="login-container1">
+                
+                 <h2  class="login"> Sign Up /<p class="signin"> Login </p></h2>
+                  <form class="login-form1">
+                    <div class="form-group">
+                      <table >
+                         
+                          <tr>
+                              
+                              <td><input type="text" placeholder="Hospital Name" size="25" class="hospital" name="hname"></td>
+                              
+                              <td><input type="text"placeholder="Email Id"  size="25" name="eid"> </td>
+                          </tr>
+                          <tr>
+                              <td><input type="text" placeholder="Address"  size="25" name="address"></td>
+                              <td><input type="text"  placeholder="Phone Number"  size="25" name="pnumber"></td>
+                          </tr>
+                          <tr>
+                              <td><input type="text" placeholder="City"  size="25" name="city"></td>
+                              <td><input type="text"  placeholder="Hospital Registration Number"  size="25" name="hnumber"></td>
+                          </tr>
+                          <tr>
+                              <td><input type="text" placeholder="State"  size="25" name="state"></td>
+                              <td><input type="text"  placeholder="Emergency-Ward Number"  size="25" name="ewnumber"></td>
+                          </tr>
+                          <tr>
+                              <td><input type="text" placeholder="Pincode"  size="25" name="pincode"></td>
+                              <td><input type="text"  placeholder="Registration certificate Uploade"  size="25" name="rcu"><br><input type="file"></td>
+                          </tr>
+                          <tr>
+                              <td><input type="text" placeholder="Hospital Registration Date" size="25" name="hrd"></td>
+                              <td><input type="text"  placeholder="Create Password"  size="25" name="password"></td>
+                          </tr>
+                          <tr>
+                              <td><input type="text" placeholder="Number Of Ambulance available" name="ambulane"  size="25"></td>
+                              <td><input type="text"  placeholder="Confirm Password"  size="25" name="cpassword"></td>
+                          </tr>
+                      </table>
+                      
+                    </div>
+                    
+                    <div class="form-group">
+                      <button type="submit">Sign up</button>
+                    </div>
+                    <div class="term">
+                      <p>. Terms and Condition privacy policy</p>
+                    </div>
+                
+                </div>
+              </table>
+              </div>
+           
+        </form>
+        <!-- <div class="login-container" id="loginContainer"> -->
+        <form id="loginForm1" onsubmit="return showSuccessMessage1()">
+          <div id="successMessage" class="success-message"></div>
+          <div id="newLoginPage">
+          
+
+            <div class="container1">
+                <div class="column2">
+                  <img src="WhatsApp Image 2023-11-25 at 11.41.29 PM.jpeg" alt="Background Image">
+                </div>
+                <div class="column3">
+                  
+                  <div class="box">
+            
+                    <center><p class="signin">Sign Up </p><p class="login">/ Login</p></center>
+                    <center><div class="box one">
+                    <h3>Welcome to Sicu-auro</h3>
+                    <p class="script">one step safety solutions using innovative technology</p>
+                      <hr color="white"> 
+                      <hr color="white"> 
+                      <hr color="white"> 
+                      <input type="text" placeholder="Hospital Name" class="hospitalName">
+                      <hr color="white"> 
+                      <input type="text" placeholder="Email Id">
+                      <hr color="white"> 
+                      <input type="password" placeholder="Password">
+                      <hr color="white"> 
+                      <input type="text" placeholder="Special Access Code">
+                      <hr color="white">
+                      <button>Login</button>
+                    </center>
+                    </center>
+                  </div>
+                  <center><p class="script"><sub>*</sub> Terms and Contitions privacy policy</p></center>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+  </form>
+<!-- </div> -->
+<div class="login-container2" id="loginContainer3">
+    <div id="successMessage1" class="success-message1"></div>
+    <div id="newLoginPage1">
+      <div id="capture-container">
+        <h2>Capture Your Picture</h2>
+        <div id="pic-preview"></div>
+        <button id="retake-btn" onclick="retakePicture()">Retake</button>
+        <button id="continue-btn" onclick="continueProcess()">Continue</button>
+        <video id="video-preview" width="400" height="300" autoplay></video>
+        <button id="capture-btn" onclick="captureImage()">Capture</button>
+    </div>
+      </div>
+      
+      </div>
+    <script src="script.js">
+
+    </script>
+       
+</body>
+</html>
